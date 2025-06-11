@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block  title %}Product Info{% endblock %}
+
+{% block content %}
+    <div class="row">
+    <center>
+        <div class="col-md-6">
+            <img width="100%" src="{{ product.ImageURL }}">
+            <div class="box-element product">
+            <h5><strong>{{ product.name }}</strong></h5>
+            <hr>
+                <p>{{ product.description }}</p>
+            <a href="{% url 'store:items' %}" class="btn btn-secondary">Back</a>
+            <button data-product="{{ product.pk }}" data-action="add"  class="btn btn-secondary add-btn update-cart">Add To Cart</button>
+            </div>
+        </div>
+    </center>
+    </div>
+{% endblock %}
