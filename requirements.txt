@@ -3,6 +3,6 @@ gunicorn==23.0.0
 psycopg2-binary==2.9.10
 python-dotenv==1.1.0
 uvicorn==0.34.3
-whitenoise==8.9.0
+whitenoise==6.9.0
 pillow==11.2.1
 dj-database-url==3.0.0
